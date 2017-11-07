@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:id="@+id/app_progressbar"
+        />
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:text="Nao possui nenhuma publicacao :("
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/conectionErrorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:id="@+id/conexaoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sem conexão com Internet."
+            android:layout_marginBottom="20dp"
+            />
+        <Button
+            android:id="@+id/btnRecarregar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Recarregar"
+            android:textColor="@color/green"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>

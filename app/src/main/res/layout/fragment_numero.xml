@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.bazara.saudigitus.bazaraapp.wizard.ui.registo.NumeroFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="O Bazara enviará uma SMS com o código de verificação. Digite o seu número"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="36dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/country"
+                    android:layout_alignBottom="@+id/numero_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_phone_grey600_24dp"
+                    android:text="+258"/>
+
+                    <EditText
+                        android:id="@+id/numero_layout"
+                        android:layout_toRightOf="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Numero de Telefone" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Verificar"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

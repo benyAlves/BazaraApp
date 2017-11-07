@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:progressActivity="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout android:id="@+id/layout_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.vlonjatg.progressactivity.ProgressRelativeLayout
+        android:id="@+id/progressActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarlayout"
+        progressActivity:loadingBackgroundColor="@color/white"
+        progressActivity:emptyBackgroundColor="@color/white"
+        progressActivity:errorBackgroundColor="@color/white"
+        progressActivity:emptyContentTextColor="@color/subtitle"
+        progressActivity:emptyTitleTextColor="@color/titulo"
+        progressActivity:errorButtonBackgroundColor="@color/colorAccent"
+        progressActivity:errorButtonTextColor="#FFFFFF"
+        progressActivity:errorContentTextColor="@color/subtitle"
+        progressActivity:errorTitleTextColor="@color/titulo"
+        progressActivity:loadingProgressBarColor="@color/colorAccent">
+
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerview"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.vlonjatg.progressactivity.ProgressRelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:progressActivity="http://schemas.android.com/apk/res-auto"
+    tools:context="org.bazara.saudigitus.bazaraapp.fragments.BazaraFragment">
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerview"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.vlonjatg.progressactivity.ProgressFrameLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activityToolbar"
+        progressActivity:loadingBackgroundColor="#FFFFFF"
+        progressActivity:loadingProgressBarColor="@color/colorAccent"
+        progressActivity:emptyContentTextColor="#FFFFFF"
+        progressActivity:emptyTitleTextColor="#FFFFFF"
+        progressActivity:emptyBackgroundColor="@color/colorPrimary"
+        progressActivity:errorBackgroundColor="@color/colorPrimary"
+        progressActivity:errorButtonBackgroundColor="@color/colorAccent"
+        progressActivity:errorButtonTextColor="#FFFFFF"
+        progressActivity:errorContentTextColor="#FFFFFF"
+        progressActivity:errorTitleTextColor="#FFFFFF">
+
+    </com.vlonjatg.progressactivity.ProgressFrameLayout>
+
+
+</FrameLayout>

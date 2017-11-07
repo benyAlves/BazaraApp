@@ -1,0 +1,160 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="true"
+    app:cardMaxElevation="1dp"
+    app:cardCornerRadius="1dp"
+    app:cardBackgroundColor="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:elevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:id="@+id/info_doctor"
+            >
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pad_chat_item1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                >
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_dots_vertical_grey600_18dp"
+                    android:id="@+id/imageBtnOptions"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:padding="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imagem_prod"
+                android:scaleType="centerCrop"
+                android:layout_width="64dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="64dp" />
+            <LinearLayout
+                android:id="@+id/dados"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="220dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:text="Batata Reno"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text"
+                    android:id="@+id/nomeProduto"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/txt_12sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingRight="16dp"
+                    android:text="José sabido Busse"
+                    android:textColor="@color/secondary_text"
+                    android:id="@+id/nome_produtor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingRight="16dp"
+                    android:text="12/02/2017"
+                    android:textColor="@color/secondary_text"
+                    android:id="@+id/data_pedido"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dados"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="240,00Mtn X 20"
+                        android:textColor="@color/secondary_text"
+                        android:id="@+id/quant_total_pedida" />
+
+                </LinearLayout>
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:text=" = 4500,00 MTn"-->
+                    <!--android:textColor="@color/colorPrimaryDark"-->
+                    <!--android:id="@+id/preco_total_produto" />-->
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4500,00 MTn"
+                    android:maxLines="1"
+                android:textSize="16sp"
+                    android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:id="@+id/preco_total_produto"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

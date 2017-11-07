@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <EditTextPreference
+            android:defaultValue="@string/default_gallery_storage"
+            android:key="@string/key_gallery_name"
+            android:summary="@string/default_gallery_storage"
+            android:title="Nome Completo" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notificações">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/notifications_new_message"
+            android:title="Receber Notificações" />
+
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="notifications_new_message"
+            android:key="@string/key_notifications_new_message_ringtone"
+            android:ringtoneType="notification"
+            android:summary="Escolher o toque da notificação"
+            android:title="Toque" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/key_vibrate"
+            android:summary="Vibrar ao receber notificação"
+            android:title="Vibrar" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Sobre">
+
+        <Preference
+            android:selectable="false"
+            android:summary="O Bazara tem como objectivo aumentar a renda de agricultores. Consiste numa plataforma de divulgação e comercialização de produtos dos agricultores de forma a facilitar o estabelecimento de parcerias entre consumidores individuais, empresas locais e agricultores ou associações" />
+
+        <!--<Preference-->
+            <!--android:summary="@string/app_version"-->
+            <!--android:title="@string/title_version" />-->
+
+        <!--<Preference-->
+            <!--android:key="@string/key_send_feedback"-->
+            <!--android:summary="@string/summary_support"-->
+            <!--android:title="@string/title_send_feedback" />-->
+
+        <!--&lt;!&ndash; preference opens url in browser &ndash;&gt;-->
+        <!--<Preference-->
+            <!--android:summary="@string/summary_faq"-->
+            <!--android:title="@string/title_faq">-->
+            <!--<intent-->
+                <!--android:action="android.intent.action.VIEW"-->
+                <!--android:data="@string/url_faq" />-->
+        <!--</Preference>-->
+
+        <Preference android:title="@string/privacy_policy">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_privacy" />
+        </Preference>
+
+        <Preference android:title="@string/title_terms">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_terms" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

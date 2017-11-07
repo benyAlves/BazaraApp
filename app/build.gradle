@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "org.bazara.saudigitus.bazaraapp"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0'
+    compile 'com.github.vlonjatg:progress-activity:v2.0.3'
+    compile 'com.malinskiy:materialicons:1.0.2'
+    compile 'com.afollestad.material-dialogs:core:0.9.4.7'
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.1.3'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.github.florent37:materialviewpager:1.2.3'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-moshi:2.3.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.basgeekball:awesome-validation:2.0'
+    compile 'com.google.firebase:firebase-auth:11.0.1'
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'com.jpardogo.materialtabstrip:library:1.1.0'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile 'me.philio:pinentryview:1.0.6'
+    compile 'com.github.claudiodegio:MsvSearch:1.0.0'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.facebook.stetho:stetho:1.5.0'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    compile 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
+    compile 'com.google.firebase:firebase-messaging:11.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

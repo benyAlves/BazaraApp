@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:progressActivity="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CestoFragment">
+
+    <com.vlonjatg.progressactivity.ProgressFrameLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activityToolbar"
+        progressActivity:loadingBackgroundColor="#FFFFFF"
+        progressActivity:loadingProgressBarColor="@color/colorAccent"
+        progressActivity:emptyContentTextColor="#FFFFFF"
+        progressActivity:emptyTitleTextColor="#FFFFFF"
+        progressActivity:emptyBackgroundColor="@color/colorPrimary"
+        progressActivity:errorBackgroundColor="@color/colorPrimary"
+        progressActivity:errorButtonBackgroundColor="@color/colorAccent"
+        progressActivity:errorButtonTextColor="#FFFFFF"
+        progressActivity:errorContentTextColor="#FFFFFF"
+        progressActivity:errorTitleTextColor="#FFFFFF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+    </com.vlonjatg.progressactivity.ProgressFrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/activity_cart_list"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout android:id="@+id/layout_items"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_weight="9.5"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recyclerview"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layout_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:elevation="30dp"
+            android:background="@color/gen_black"
+            android:layout_weight="0.50">
+            <TextView android:id="@+id/text_action_bottom1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/gen_white"
+                android:text="4500 MTn"
+                android:textSize="14dp"
+                android:textColor="@color/gen_black"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView android:id="@+id/btn_terminar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="TERMINAR"
+                android:textSize="14dp"
+                android:clickable="true"
+                android:textColor="@color/gen_white"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

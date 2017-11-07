@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#009688</color>
+    <color name="primary_light">#C8E6C9</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="subtitle">#999999</color>
+    <color name="titulo">#222222</color>
+
+    <color name="adp_mtrl_ripple_dark">#20ffffff</color>
+    <color name="adp_mtrl_ripple_light">#20444444</color>
+
+
+    <color name="black">#000000</color>
+    <color name="orange">#ff9100</color>
+    <color name="brown">#5d4037</color>
+    <color name="dark_grey">#484547</color>
+
+    <color name="app_background_color">#FAFAFA</color>
+    <color name="divider_color">#C7C7CC</color>
+
+    <color name="item_selected_background_color">#C7C7CC</color>
+    <color name="image_placeholder_background_color">#C7C7CC</color>
+
+    <color name="gen_black">#000000</color>
+    <color name="gen_white">#FFFFFF</color>
+    <color name="green_light">#43A047</color>
+    <color name="grey_light">#E0E0E0</color>
+    <color name="stay_color">#999999</color>
+    <color name="material_red_500">#cc2f1d</color>
+
+
+    <color name="text_light">#66000000</color>
+    <color name="from">#000000</color>
+    <color name="subject">#111111</color>
+    <color name="timestamp">#4285f4</color>
+    <color name="message">#7a7a7a</color>
+    <color name="icon_tint_normal">#7a7a7a</color>
+    <color name="icon_tint_selected">#fed776</color>
+    <color name="row_activated">#e0e0e0</color>
+    <color name="bg_action_mode">#757575</color>
+    <color name="bg_circle_default">#666666</color>
+    <color name="separator_line">#7d7d7d</color>
+
+    <color name="step_pager_previous_tab_color">#4433b5e5</color>
+    <color name="step_pager_selected_tab_color">#ff0099cc</color>
+    <color name="step_pager_next_tab_color">#10000000</color>
+
+
+</resources>

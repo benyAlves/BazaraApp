@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    tools:context="org.bazara.saudigitus.bazaraapp.RegistoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_numero"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="Finalizar registo"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="19sp"/>
+
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:text="O seu número e a palavra-passe serão necessários para autenticar-se no Bazara"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="36dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/nome_input_ayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="true">
+                        <EditText
+                            android:id="@+id/nome_utilizador"
+                            android:layout_width="match_parent"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:hint="O seu nome" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/password_input_ayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nome_input_ayout"
+                        app:errorEnabled="true">
+
+
+                        <EditText
+                            android:id="@+id/palavra_passe"
+
+                            android:layout_width="match_parent"
+                            android:inputType="textPassword"
+                            android:layout_height="wrap_content"
+                            android:hint="Palavra-passe" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/validar_numero"
+                    android:visibility="gone"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:text="Esse numero ja possui uma conta!"/>
+
+                <Button
+                    android:id="@+id/btn_registar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_border_filled"
+                    android:layout_marginTop="16dp"
+                    android:text="Registar"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
